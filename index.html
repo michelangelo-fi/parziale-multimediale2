@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest World &amp; National News &amp; Headlines - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip link, prima cosa nel DOM per gli utenti tastiera/screen reader -->
+    <a id="skipToMain" href="#mainContentSection">Skip to main content</a>
+
+    <!-- ==================== NAVIGATION/barra di navigazione ==================== -->
+    <div id="navWrapContainer" role="banner" aria-label="Site navigation">
+        <div id="navContainer">
+            <div class="nav-ribbon-wrap" id="navRibbon">
+                <div id="toggleSticky">
+                    <div id="fullNavToggle" aria-label="Open navigation menu" role="button" tabindex="0">
+                        <svg class="hamburger-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3,13 L3,11 L21,11 L21,13 L3,13 Z M3,7 L3,5 L21,5 L21,7 L3,7 Z M3,19 L3,17 L21,17 L21,19 L3,19 Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <a id="logoContainer" href="/" aria-label="Homepage - Logo">
+    <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='78' height='32'%3E%3Crect width='78' height='32' fill='%23009BFF'/%3E%3Ctext x='18' y='21' font-family='Arial,sans-serif' font-size='13' font-weight='bold' fill='white'%3ELOGO%3C/text%3E%3C/svg%3E"
+        alt="LOGO"
+        width="78"
+        height="32"
+    > </a>
+                </div>
+                <div id="itemWrapper">
+                    <div id="ribbon">
+                        <ul class="nav-ribbon" aria-label="Main navigation sections">
+                            <li><a href="/" class="nav-item nav-home active" aria-current="page">Home</a></li>
+                            <li><a href="/news/" class="nav-item nav-usnews">U.S.</a></li>
+                            <li><a href="/politics/" class="nav-item">Politics</a></li>
+                            <li><a href="/sports/" class="nav-item nav-sports">Sports</a></li>
+                            <li><a href="/entertainment/" class="nav-item">Entertainment</a></li>
+                            <li><a href="/life/" class="nav-item">Life</a></li>
+                            <li><a href="/money/" class="nav-item">Money</a></li>
+                            <li><a href="/tech/" class="nav-item">Tech</a></li>
+                            <li><a href="/travel/" class="nav-item">Travel</a></li>
+                            <li><a href="/opinion/" class="nav-item">Opinion</a></li>
+                            <li><a href="/crossword/" class="nav-item nav-crossword">Crossword</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER / HERO MOSAIC ==================== -->
+    <header>
+        <div class="hero-mosaic-background">
+        <div class="hero-mosaic-container">
+            <!-- Storie principali del mosaic - layout in CSS Grid sul desktop -->
+            <div class="hero-stories-slot">
+                <!-- Storia featured: unica con <h1> sulla pagina -->
+                <article class="hero-slot-one">
+                    <a class="p12-container-link" href="#">
+                        <div class="p12-photo">
+                            <img src="https://placehold.co/1200x675/1a3a5c/ffffff?text=Featured+Story" alt="" width="1200" height="675" loading="eager">
+                        </div>
+                        <div class="p12-article-metadata">
+                            <h1 class="p12-title">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</h1>
+                        </div>
+                    </a>
+                    <p class="p12-description">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </article>
+
+                <!-- Storie secondarie del mosaic -->
+                <div class="secondary-slot-wrapper">
+                    <article class="hero-slot-two">
+                        <a class="p13-container" href="#">
+                            <div class="p13-photo">
+                                <img src="https://placehold.co/600x400/2a4a6a/ffffff?text=Story" alt="" width="600" height="400" loading="eager">
+                            </div>
+                            <div class="p13-text-wrap">
+                                <h2 class="p13-title">Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hero-slot-three">
+                        <a class="p13-container" href="#">
+                            <div class="p13-photo">
+                                <img src="https://placehold.co/600x400/1b3b5b/ffffff?text=Story" alt="" width="600" height="400" loading="eager">
+                            </div>
+                            <div class="p13-text-wrap">
+                                <h2 class="p13-title">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Top Stories Sidebar - lista semantica -->
+            <aside class="top-stories-slot" aria-label="Top stories">
+                <ul class="top-stories-wrapper">
+                    <li>
+                        <a class="p1-container" href="#">
+                            <div class="p1-text-wrap">
+                                <h2 class="p1-nothumb-title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h2>
+                                <div class="p1-nothumb-info-wrap">
+                                    <span class="p1-label">Politics</span>
+                                    <span class="p1-timestamp">2h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p1-container" href="#">
+                            <div class="p1-text-wrap">
+                                <h2 class="p1-nothumb-title">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</h2>
+                                <div class="p1-nothumb-info-wrap">
+                                    <span class="p1-label">Nation</span>
+                                    <span class="p1-timestamp">4h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p1-container" href="#">
+                            <div class="p1-text-wrap">
+                                <h2 class="p1-nothumb-title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
+                                <div class="p1-nothumb-info-wrap">
+                                    <span class="p1-label">World</span>
+                                    <span class="p1-timestamp">6h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="p1-container" href="#">
+                            <div class="p1-text-wrap">
+                                <h2 class="p1-nothumb-title">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis</h2>
+                                <div class="p1-nothumb-info-wrap">
+                                    <span class="p1-label">Money</span>
+                                    <span class="p1-timestamp">8h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        </div>
+
+        <!-- High Impact Ad -->
+        <div class="ad-slot ad-high-impact spacer-large" aria-label="Advertisement" role="complementary">
+            <div class="ad-inner-text">Advertisement - scroll for more content</div>
+            <div style="width:100%;max-width:970px;height:250px;background:#e9e9e9;display:flex;align-items:center;justify-content:center;border-radius:2px;">
+                <span style="color:#aaa;font-family:sans-serif;font-size:14px;">Ad Placement</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <!-- <main> esplicito: landmark unico per la zona di contenuto principale. -->
+    <main id="mainContentSection" class="page-main-content-container">
+        <!-- Primary Column - feed delle storie -->
+        <div class="primary">
+            <div class="content-well">
+                <section id="section-stories" aria-label="Latest stories">
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Nation</span>
+                                <span class="story-card-timestamp">2h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/3a5a7a/ffffff?text=News" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Money</span>
+                                <span class="story-card-timestamp">3h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/2a5a3a/ffffff?text=Money" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <aside class="ad-slot ad-inline" aria-label="Advertisement">
+                        <p class="ad-inner-text">Ad Placement (300x250)</p>
+                    </aside>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Nation</span>
+                                <span class="story-card-timestamp">4h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/4a3a6a/ffffff?text=News" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Graphics</span>
+                                <span class="story-card-timestamp">6h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/5a4a2a/ffffff?text=Graphics" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <!-- Sponsored card: differs only by the "STORY FROM" label above title -->
+                    <article class="story-card story-card-sponsored">
+                        <div class="story-card-text">
+                            <span class="story-card-sponsor-label">Story from Lorem Ipsum Inc.</span>
+                            <h2 class="story-card-title"><a href="#">Maecenas faucibus mollis interdum cras justo odio dapibus ac facilisis</a></h2>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/4a4a4a/ffffff?text=Sponsored" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">NFL</span>
+                                <span class="story-card-timestamp">7h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/3a2a1a/ffffff?text=Sports" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">World</span>
+                                <span class="story-card-timestamp">9h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/1a3a5c/ffffff?text=World" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <aside class="ad-slot ad-inline" aria-label="Advertisement">
+                        <p class="ad-inner-text">Ad Placement (300x250)</p>
+                    </aside>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">World</span>
+                                <span class="story-card-timestamp">10h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/2c4c6c/ffffff?text=World" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Money</span>
+                                <span class="story-card-timestamp">12h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/3a5a3a/ffffff?text=Money" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Et harum quidem rerum facilis est et expedita distinctio nam libero tempore</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Celebrities</span>
+                                <span class="story-card-timestamp">14h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/5a3a5a/ffffff?text=Entertainment" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Movies</span>
+                                <span class="story-card-timestamp">16h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/4a3a2a/ffffff?text=Movies" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <div class="story-card-text">
+                            <h2 class="story-card-title"><a href="#">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis</a></h2>
+                            <div class="story-card-meta">
+                                <span class="story-card-label">Celebrities</span>
+                                <span class="story-card-timestamp">18h ago</span>
+                            </div>
+                        </div>
+                        <div class="story-card-image-wrapper">
+                            <img src="https://placehold.co/400x225/3a4a5a/ffffff?text=Celebrities" alt="" width="400" height="225" loading="lazy">
+                        </div>
+                    </article>
+                </section>
+
+                <!-- ===== SECTION BUCKETS (pattern p2 + p13) ===== -->
+                <section class="section-bucket section-news" aria-labelledby="news-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="news-heading"><a href="#news/">News</a></h2>
+                        <a class="section-bucket-arrow" href="#news/" aria-label="View all News">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/1a3a5c/ffffff?text=News" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">News</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">1h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=News" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Magni dolores eos qui ratione voluptatem sequi</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=News" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Consectetur adipisci velit sed quia non numquam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=News" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quaerat voluptatem ut enim ad minima veniam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more News <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-sports" aria-labelledby="sports-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="sports-heading"><a href="#sports/">Sports</a></h2>
+                        <a class="section-bucket-arrow" href="#sports/" aria-label="View all Sports">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/8a1a25/ffffff?text=Sports" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Sports</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">3h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/8a1a25/ffffff?text=Sports" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Voluptatem accusantium doloremque laudantium totam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/8a1a25/ffffff?text=Sports" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Architecto beatae vitae dicta sunt explicabo</h3>
+                                    <span class="bucket-mini-meta">Subcat | 3h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/8a1a25/ffffff?text=Sports" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quia voluptas sit aspernatur aut odit aut fugit</h3>
+                                    <span class="bucket-mini-meta">Subcat | 9h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Sports <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-entertainment" aria-labelledby="entertainment-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="entertainment-heading"><a href="#entertainment/">Entertainment</a></h2>
+                        <a class="section-bucket-arrow" href="#entertainment/" aria-label="View all Entertainment">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/5a2a7a/ffffff?text=Ent." alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Entertainment</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">9h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Ent." alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quia voluptas sit aspernatur aut odit aut fugit</h3>
+                                    <span class="bucket-mini-meta">Subcat | 9h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Ent." alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Magni dolores eos qui ratione voluptatem sequi</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Ent." alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Consectetur adipisci velit sed quia non numquam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Entertainment <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-life" aria-labelledby="life-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="life-heading"><a href="#life/">Life</a></h2>
+                        <a class="section-bucket-arrow" href="#life/" aria-label="View all Life">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/5a2a7a/ffffff?text=Life" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Life</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">12h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Life" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Architecto beatae vitae dicta sunt explicabo</h3>
+                                    <span class="bucket-mini-meta">Subcat | 3h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Life" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quia voluptas sit aspernatur aut odit aut fugit</h3>
+                                    <span class="bucket-mini-meta">Subcat | 9h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/5a2a7a/ffffff?text=Life" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Magni dolores eos qui ratione voluptatem sequi</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Life <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-money" aria-labelledby="money-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="money-heading"><a href="#money/">Money</a></h2>
+                        <a class="section-bucket-arrow" href="#money/" aria-label="View all Money">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/1a5a3a/ffffff?text=Money" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Money</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">1 day ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a5a3a/ffffff?text=Money" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vel illum qui dolorem eum fugiat quo voluptas</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a5a3a/ffffff?text=Money" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vero eos et accusamus et iusto odio dignissimos</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a5a3a/ffffff?text=Money" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Voluptatem accusantium doloremque laudantium totam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Money <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-tech" aria-labelledby="tech-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="tech-heading"><a href="#tech/">Tech</a></h2>
+                        <a class="section-bucket-arrow" href="#tech/" aria-label="View all Tech">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/7a4a1a/ffffff?text=Tech" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Tech</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">1h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/7a4a1a/ffffff?text=Tech" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Voluptate velit esse quam nihil molestiae consequatur</h3>
+                                    <span class="bucket-mini-meta">Subcat | 9h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/7a4a1a/ffffff?text=Tech" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vel illum qui dolorem eum fugiat quo voluptas</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/7a4a1a/ffffff?text=Tech" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vero eos et accusamus et iusto odio dignissimos</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Tech <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-travel" aria-labelledby="travel-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="travel-heading"><a href="#travel/">Travel</a></h2>
+                        <a class="section-bucket-arrow" href="#travel/" aria-label="View all Travel">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/0a5a6a/ffffff?text=Travel" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Travel</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">3h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/0a5a6a/ffffff?text=Travel" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quia voluptas sit aspernatur aut odit aut fugit</h3>
+                                    <span class="bucket-mini-meta">Subcat | 9h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/0a5a6a/ffffff?text=Travel" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Magni dolores eos qui ratione voluptatem sequi</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/0a5a6a/ffffff?text=Travel" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Consectetur adipisci velit sed quia non numquam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Travel <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-opinion" aria-labelledby="opinion-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="opinion-heading"><a href="#opinion/">Opinion</a></h2>
+                        <a class="section-bucket-arrow" href="#opinion/" aria-label="View all Opinion">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/3a3a7a/ffffff?text=Opinion" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Opinion</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">9h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/3a3a7a/ffffff?text=Opinion" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vero eos et accusamus et iusto odio dignissimos</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/3a3a7a/ffffff?text=Opinion" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Voluptatem accusantium doloremque laudantium totam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/3a3a7a/ffffff?text=Opinion" alt="" width="300" height="225" loading="lazy">
+                                        
+                                    </div>
+                                    <h3 class="bucket-mini-title">Architecto beatae vitae dicta sunt explicabo</h3>
+                                    <span class="bucket-mini-meta">Subcat | 3h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Opinion <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-videos" aria-labelledby="videos-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="videos-heading"><a href="#videos/">Most Recent Videos</a></h2>
+                        <a class="section-bucket-arrow" href="#videos/" aria-label="View all Most Recent Videos">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/1a3a5c/ffffff?text=Video" alt="" width="700" height="394" loading="lazy">
+                                <span class="story-card-media-badge" aria-label="Video" style="bottom:auto;top:auto;left:auto;right:6px;bottom:6px;"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Most</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">12h ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Video" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Video"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Magni dolores eos qui ratione voluptatem sequi</h3>
+                                    <span class="bucket-mini-meta">Subcat | 12h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Video" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Video"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Consectetur adipisci velit sed quia non numquam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Video" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Video"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Quaerat voluptatem ut enim ad minima veniam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Most Recent Videos <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+                <section class="section-bucket section-galleries" aria-labelledby="galleries-heading">
+                    <header class="section-bucket-header">
+                        <h2 class="section-bucket-title" id="galleries-heading"><a href="#galleries/">Most Recent Galleries</a></h2>
+                        <a class="section-bucket-arrow" href="#galleries/" aria-label="View all Most Recent Galleries">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6V6z"/></svg>
+                        </a>
+                    </header>
+
+                    <article class="bucket-featured">
+                        <a class="bucket-featured-link" href="#">
+                            <div class="bucket-featured-photo">
+                                <img src="https://placehold.co/700x394/1a3a5c/ffffff?text=Gallery" alt="" width="700" height="394" loading="lazy">
+                            </div>
+                            <div class="bucket-featured-text">
+                                <h3 class="bucket-featured-title">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis</h3>
+                                <div class="bucket-featured-meta">
+                                    <span class="bucket-featured-label">Most</span><span class="bucket-featured-meta-sep">|</span><span class="bucket-featured-time">1 day ago</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="bucket-mini-grid">
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Gallery" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Gallery"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Vero eos et accusamus et iusto odio dignissimos</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1 day ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Gallery" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Gallery"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Voluptatem accusantium doloremque laudantium totam</h3>
+                                    <span class="bucket-mini-meta">Subcat | 1h ago</span>
+                                </a>
+                            </article>
+                            <article class="bucket-mini-card">
+                                <a href="#">
+                                    <div class="bucket-mini-photo">
+                                        <img src="https://placehold.co/300x225/1a3a5c/ffffff?text=Gallery" alt="" width="300" height="225" loading="lazy">
+                                        <span class="bucket-mini-badge" aria-label="Gallery"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/></svg></span>
+                                    </div>
+                                    <h3 class="bucket-mini-title">Architecto beatae vitae dicta sunt explicabo</h3>
+                                    <span class="bucket-mini-meta">Subcat | 3h ago</span>
+                                </a>
+                            </article>
+                    </div>
+
+                    <div class="bucket-show-more">
+                        <a href="#">Show more Most Recent Galleries <svg class="bucket-show-more-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></a>
+                    </div>
+                </section>
+
+
+                <!-- Recommendations - layout in CSS Grid -->
+                <section class="recommendations-section" aria-labelledby="recommendations-heading">
+                    <h2 class="recommendations-header" id="recommendations-heading">More From The Web</h2>
+                    <div class="recommendations-grid">
+                        <a class="rec-card" href="#">
+                            <div class="rec-card-image">
+                                <img src="https://placehold.co/180x180/6a5a3a/ffffff?text=Sponsored" alt="" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="rec-card-content">
+                                <span class="rec-title">Discover Amazing Travel Deals For Your Next Vacation Adventure</span>
+                                <span class="rec-branding">TravelCo</span>
+                            </div>
+                        </a>
+                        <a class="rec-card" href="#">
+                            <div class="rec-card-image">
+                                <img src="https://placehold.co/180x180/3a6a5a/ffffff?text=Sponsored" alt="" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="rec-card-content">
+                                <span class="rec-title">Top 10 Investment Strategies For 2026 Revealed By Experts</span>
+                                <span class="rec-branding">FinanceHub</span>
+                            </div>
+                        </a>
+                        <a class="rec-card" href="#">
+                            <div class="rec-card-image">
+                                <img src="https://placehold.co/180x180/4a4a5a/ffffff?text=Sponsored" alt="" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="rec-card-content">
+                                <span class="rec-title">New Electric Vehicle Breaks Range Records - See The Details</span>
+                                <span class="rec-branding">AutoWorld</span>
+                            </div>
+                        </a>
+                        <a class="rec-card" href="#">
+                            <div class="rec-card-image">
+                                <img src="https://placehold.co/180x180/5a3a3a/ffffff?text=Sponsored" alt="" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="rec-card-content">
+                                <span class="rec-title">Simple Home Workouts That Will Transform Your Fitness In Weeks</span>
+                                <span class="rec-branding">FitLife</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Secondary / Sidebar Column -->
+        <aside class="secondary" aria-label="Sidebar">
+            <div class="content-well">
+
+                <a class="feedback-cta" href="#">
+                    <span class="emphasis">Share your feedback</span> to help improve our site!
+                </a>
+
+                <aside class="ad-slot ad-sidebar" aria-label="Advertisement">
+                    <p class="ad-inner-text">Ad Placement (300x600)</p>
+                </aside>
+
+                <aside class="ad-slot ad-sidebar ad-sticky" aria-label="Advertisement">
+                    <p class="ad-inner-text">Ad Placement (300x600)</p>
+                </aside>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- ==================== PRE-FOOTER AD ==================== -->
+    <aside class="ad-slot ad-leaderboard-btf spacer-large" aria-label="Advertisement">
+        <p class="ad-inner-text">Ad Placement</p>
+    </aside>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footerContainer" role="contentinfo" aria-label="Site footer">
+        <ul class="footer-links" aria-label="Footer links">
+            <li class="footer-link"><a href="#">Help</a></li>
+            <li class="footer-link"><a href="#">Terms of Service</a></li>
+            <li class="footer-link"><a href="#">Subscription Terms &amp; Conditions</a></li>
+            <li class="footer-link"><a href="#">Privacy Policy</a></li>
+            <li class="footer-link"><a href="#">Site Map</a></li>
+            <li class="footer-link"><a href="#">Accessibility</a></li>
+            <li class="footer-link"><a href="#">Our Ethical Principles</a></li>
+            <li class="footer-link"><a href="#">Responsible Disclosure</a></li>
+            <li class="footer-link last ypc">
+                <a href="#" aria-label="Your Privacy Choices">
+                    <svg class="ypc-icon-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="12" fill="none" viewBox="0 0 25 12" aria-hidden="true">
+                        <path fill="#1366FF" d="M19.07 0H5.93A5.93 5.93 0 0 0 0 5.93v.115a5.93 5.93 0 0 0 5.93 5.93h13.14A5.93 5.93 0 0 0 25 6.044v-.116A5.93 5.93 0 0 0 19.07 0Z"></path>
+                        <path fill="#fff" d="M6.061 1.022a4.89 4.89 0 0 0-4.875 4.876v.14a4.89 4.89 0 0 0 4.875 4.876h5.298c.03 0 .056-.02.063-.05l2.67-9.758a.065.065 0 0 0-.062-.083H6.062Z"></path>
+                        <path fill="#1366FF" d="M6.694 8.673a.527.527 0 0 1-.37-.151L4.358 6.584a.527.527 0 1 1 .74-.75l1.56 1.537 3.25-3.846a.527.527 0 0 1 .805.68L7.096 8.486a.528.528 0 0 1-.38.187h-.023Z"></path>
+                        <path fill="#fff" d="m21.008 7.928-1.924-1.96 1.862-1.896a.527.527 0 1 0-.751-.739l-1.849 1.883-1.849-1.883a.527.527 0 1 0-.751.739l1.862 1.896-1.924 1.96a.527.527 0 1 0 .752.738l1.91-1.946 1.911 1.946a.525.525 0 0 0 .745.007.527.527 0 0 0 .007-.745h-.001Z"></path>
+                    </svg>
+                    Your Privacy Choices
+                </a>
+            </li>
+        </ul>
+       <div class="footer-social-buttons" aria-label="Social media links">
+    <a href="#" aria-label="Facebook" class="social-button social-boomerbook"></a>
+    <a href="#" aria-label="Piipper" class="social-button social-piipper"></a>
+    <a href="#" aria-label="Clapchat" class="social-button social-clapchat"></a>
+    <a href="#" aria-label="Fuffagram" class="social-button social-fuffagram"></a>
+    <a href="#" aria-label="Cringedin" class="social-button social-cringedIn"></a>
+    <a href="#" aria-label="Disinterest" class="social-button social-disinterest"></a>
+</div>
+        <p class="copyright">&copy; Copyright Tonnomarcio 2026</p>
+    </footer>
+</body>
+</html>
