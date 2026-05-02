@@ -8,13 +8,11 @@
 :root {
     --nav-height: 55px; /* altezza della barra di navigazione, usata per la sticky ad */
     --color-theme: #009BFF;
-    --color-active-section: #009BFF;
     --type-primary: #222222;
     --type-secondary: #444;
     --type-body: #303030;
     --type-muted: #5a5a5a; /* meta/timestamp - migliorato contrasto WCAG AA su sfondo bianco */
     --color-linebreak: #ddd;
-    --color-alabaster: rgba(0, 0, 0, 0.03);
     --color-background: #f8f8f8;
     --color-white: #ffffff;
     --color-ad-bg: #f0f0f0;
@@ -640,16 +638,6 @@ img {
     height: auto;
 }
 
-/* @media (min-width: 960px) {
-    .ad-slot.ad-high-impact {
-        min-height: 250px;
-        max-width: 1080px;
-    }
-    .ad-slot.ad-sidebar {
-        min-height: 600px;
-}   }                     /* la sidebar è già desktop only */
-
-
 /* ========== MAIN CONTENT AREA ==========
    <main> elemento landmark esplicito */
 .page-main-content-container {
@@ -671,13 +659,7 @@ img {
 }
 .secondary {
     display:none; /* nascosta su mobile, visibile da 960px in su */
-    /*display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: #fff;
-    padding: 12px 0;
-    gap: 16px;
-    align-items: center; */
+    
 }
 
 /* Layout desktop: 2 colonne.
@@ -1148,21 +1130,7 @@ img {
 }
 
 /* ========== RECOMMENDATIONS / TABOOLA-LIKE ========== */
-/*.recommendations-section {
-    margin: 16px 8px;
-    padding-top: 16px;
-    border-top: 1px solid var(--color-linebreak);
-}
-.recommendations-header {
-    font-family: var(--font-sans);
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--type-secondary);
-    margin-bottom: 16px;
-    letter-spacing: 0.5px;
-}
-*/
+
 
 /* Lista verticale, non griglia */
 .recommendations-list {
@@ -1221,16 +1189,18 @@ img {
 }
 
 .rec-cta-button {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: inline-block;
-    align-self: flex-start;
-    margin-top: 6px;
+    margin-top: 0;
     padding: 4px 12px;
     border: 1px solid rgba(0, 0, 0, 0.87);
     background: transparent;
     color: rgba(0, 0, 0, 0.87);
     font-family: var(--font-sans);
     font-size: 12px;
-    border-radius: 0;
+    border-radius: 4px;
     cursor: pointer;
     pointer-events: none;
 }
@@ -1246,27 +1216,14 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-/* CSS GRID con responsive auto-fill */
-.recommendations-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-}
-
 .rec-card {
+    position: relative;
     display: flex;
     gap: 12px;
     text-decoration: none;
     color: var(--type-body);
     padding-bottom: 14px;
+    padding-right: 110px;
     border-bottom: 1px solid #eee;
     align-items: flex-start;
 }
