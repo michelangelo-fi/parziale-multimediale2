@@ -6,6 +6,7 @@
 
 /* ========== DESIGN TOKENS ========== */
 :root {
+    --nav-height: 55px; /* altezza della barra di navigazione, usata per la sticky ad */
     --color-theme: #009BFF;
     --color-active-section: #009BFF;
     --type-primary: #222222;
@@ -120,7 +121,7 @@ img {
 /* contenitore interno - altezza fissa, overflow nascosto */
 #navContainer {
     background-color: #fff;
-    height: 55px;
+    height: var(--nav-height);
     overflow: hidden;
     width: 100%;
 }
@@ -556,8 +557,7 @@ img {
     }
 }
 
-/* ========== AD PLACEHOLDERS ==========
-   Ora interamente CSS - niente più style inline */
+/* ========== AD PLACEHOLDERS ========== */
 .ad-slot {
     display: flex;
     flex-direction: column;
@@ -592,7 +592,7 @@ img {
 .ad-slot.ad-high-impact {
     min-height: 250px;
     margin: 16px auto;
-    max-width: 1080px;
+    max-width: 970px;
     width: calc(100% - 24px);
 }
 .ad-slot.ad-banner {
@@ -608,7 +608,7 @@ img {
     min-height: 620px;
 
      background: #f0f0f0;
-    border: 1px dashed var(--color-ad-border);
+    border: 1px solid var(--color-ad-border);
     border-radius: 0;
 }
 .ad-slot.ad-inline {
@@ -618,7 +618,7 @@ img {
     max-width: 300px;
 }
 .ad-slot.ad-leaderboard-btf {
-    min-height: 110px;
+    min-height: 90px;
     max-width: 970px;
     width: calc(100% - 24px);
     margin: 16px auto;
@@ -631,18 +631,24 @@ img {
 /* Sticky ad nella sidebar (sostituisce lo style inline) */
 .ad-slot.ad-sticky {
     position: sticky;
-    top: 80px;
+    top: var(--nav-height);
+    margin-bottom: 0;
+}
+.ad-slot img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
     .ad-slot.ad-high-impact {
         min-height: 250px;
         max-width: 1080px;
     }
     .ad-slot.ad-sidebar {
         min-height: 600px;
-    }
-}
+}   }                     /* la sidebar è già desktop only */
+
 
 /* ========== MAIN CONTENT AREA ==========
    <main> elemento landmark esplicito */
@@ -689,17 +695,24 @@ img {
     .primary {
         flex: 0 0 58.333%;
         max-width: 58.333%;
-        overflow: hidden;
+        
         padding: 0 8px;
     }
     .secondary {
-        display: flex;
+        display: block;
         flex-direction: column;
         flex: 0 0 41.667%;
         max-width: 41.667%;
         padding: 0;
         background: #fff;
         align-items: stretch; /* allinea i bucket alla larghezza del contenitore */
+    }
+    .poster-scroll {
+    height: 1050px;
+    margin-bottom: 0;
+    }
+    .poster-scroll:last-child {
+    height: auto;   /* l'ultimo non ha bisogno di altezza fissa */
     }
 
 }
@@ -1135,7 +1148,7 @@ img {
 }
 
 /* ========== RECOMMENDATIONS / TABOOLA-LIKE ========== */
-.recommendations-section {
+/*.recommendations-section {
     margin: 16px 8px;
     padding-top: 16px;
     border-top: 1px solid var(--color-linebreak);
@@ -1149,6 +1162,97 @@ img {
     margin-bottom: 16px;
     letter-spacing: 0.5px;
 }
+*/
+
+/* Lista verticale, non griglia */
+.recommendations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--color-border, #ddd);
+}
+
+/* Card affiancata orizzontalmente: immagine a sinistra, contenuto a destra */
+.rec-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border, #ddd);
+    text-decoration: none;
+    color: inherit;
+}
+
+.rec-card-image {
+    flex: 0 0 90px;     /* immagine quadrata fissa a sinistra */
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.rec-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rec-card-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;       /* evita overflow del testo lungo */
+}
+
+.rec-branding {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--type-muted, #666);
+    font-weight: 600;
+}
+
+.rec-title {
+    font-size: 15px;
+    line-height: 1.35;
+    color: var(--type-base, #000);
+    font-weight: 500;
+}
+
+.rec-cta-button {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 6px;
+    padding: 4px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    background: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    border-radius: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.recommendations-sponsored-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--type-muted, #666);
+    margin-left: 8px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
 
 /* CSS GRID con responsive auto-fill */
 .recommendations-grid {
